@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Covid_App</string>
+    <string name="covid_19">Covid-19</string>
+    <string name="questionario_covid">Covid Quiz</string>
+    <string name="iniciar">Start</string>
+    <string name="sair">Sair</string>
+    <string name="image">image</string>
+    <string name="edit_titulo">fill in the fields</string>
+    <string name="edit_name">Name</string>
+    <string name="edit_phone">Phone</string>
+    <string name="edit_age">Age</string>
+    <string name="edit_address">Address</string>
+    <string name="edit_gender">Gender</string>
+    <string name="button_continue">Continue</string>
+    <string name="button_continue2">Continue</string>
+    <string name="edit_viajar">Recently Traveled</string>
+    <string name="button_travel">Yes</string>
+    <string name="button_didnt_travel">No</string>
 </resources>
