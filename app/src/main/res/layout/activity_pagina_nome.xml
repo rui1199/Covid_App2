@@ -98,13 +98,14 @@
             android:hint="@string/edit_gender" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_marginTop="25dp"
-        android:layout_marginRight="25dp"
-        android:text="@string/button_continue" />
-</LinearLayout>
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="25dp"
+            android:onClick="button_continue"
+            android:text="@string/button_continue" />
+    </LinearLayout>
 </ScrollView>

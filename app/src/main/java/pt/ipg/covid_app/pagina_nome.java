@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class pagina_nome extends AppCompatActivity {
 
@@ -13,5 +14,10 @@ public class pagina_nome extends AppCompatActivity {
         setContentView(R.layout.activity_pagina_nome);
 
         Intent iniciar = getIntent();
+    }
+    public void button_continue (View view){
+        Intent iniciar= new Intent(getApplicationContext(), pagina_viajou.class);
+
+        startActivity(iniciar);
     }
 }

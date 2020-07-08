@@ -12,6 +12,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Intent fim = getIntent();
     }
     public void button_iniciar (View view){
         Intent iniciar = new Intent(getApplicationContext(), pagina_nome.class);
