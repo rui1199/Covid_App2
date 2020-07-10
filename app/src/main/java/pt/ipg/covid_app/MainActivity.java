@@ -20,4 +20,8 @@ public class MainActivity extends AppCompatActivity {
 
         startActivity(iniciar);
     }
+
+    public void button_sair (View view){
+
+    }
 }

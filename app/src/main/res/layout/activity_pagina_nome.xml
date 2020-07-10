@@ -17,7 +17,7 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewphone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/edit_titulo" />
@@ -28,6 +28,7 @@
         android:layout_marginTop="25dp">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textinputnome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -44,6 +45,7 @@
         android:layout_marginTop="25dp">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textinputtele"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -59,6 +61,7 @@
         android:layout_marginTop="25dp">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textinputmorada"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -74,6 +77,7 @@
         android:layout_marginTop="25dp">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textinputidade"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -89,6 +93,7 @@
         android:layout_marginTop="25dp">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textinputgenero"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
