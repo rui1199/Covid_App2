@@ -137,7 +137,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <RadioGroup
-        android:id="@+id/radioGroup"
+        android:id="@+id/grupo1"
         android:layout_width="355dp"
         android:layout_height="32dp"
         android:layout_marginTop="20dp"
@@ -147,13 +147,13 @@
         app:layout_constraintTop_toBottomOf="@+id/textView14">
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/bsim1"
             android:layout_width="84dp"
             android:layout_height="wrap_content"
             android:text="Sim" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/bnao1"
             android:layout_width="84dp"
             android:layout_height="wrap_content"
             android:text="Não" />
@@ -168,10 +168,10 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        app:layout_constraintTop_toBottomOf="@+id/grupo1" />
 
     <RadioGroup
-        android:id="@+id/radioGroup3"
+        android:id="@+id/grupo2"
         android:layout_width="355dp"
         android:layout_height="32dp"
         android:layout_marginTop="20dp"
@@ -181,13 +181,13 @@
         app:layout_constraintTop_toBottomOf="@+id/textView15">
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/bsim2"
             android:layout_width="84dp"
             android:layout_height="wrap_content"
             android:text="Sim" />
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/bnao2"
             android:layout_width="84dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -203,7 +203,7 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
+        app:layout_constraintTop_toBottomOf="@+id/grupo2" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout2"
@@ -219,18 +219,20 @@
         app:layout_constraintTop_toBottomOf="@+id/textView16">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sintomas"
             android:layout_width="match_parent"
             android:layout_height="99dp"
             android:hint="Ex: Tosse, Febre.... ou Não tem" />
     </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/button_terminar"
             android:layout_width="137dp"
             android:layout_height="43dp"
             android:layout_marginTop="20dp"
             android:text="Terminar"
             app:layout_constraintEnd_toEndOf="parent"
+            android:onClick="terminar"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
