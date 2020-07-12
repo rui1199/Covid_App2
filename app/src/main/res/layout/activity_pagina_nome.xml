@@ -112,5 +112,6 @@
             android:layout_marginRight="25dp"
             android:onClick="button_continue"
             android:text="@string/button_continue" />
+
     </LinearLayout>
 </ScrollView>

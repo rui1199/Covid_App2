@@ -33,11 +33,11 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public long insertData (String nomef,String telef,String moradaf,String idadef,String generof,String viajarf,String asmaf,String sintomaf,String resultadof){
         SQLiteDatabase db=this.getWritableDatabase();
         ContentValues values=new ContentValues();
-        values.put("Nome",nomef);
-        values.put("Tele",telef);
-        values.put("Morada",moradaf);
-        values.put("Idade",idadef);
-        values.put("Genero",generof);
+        values.put("nome",nomef);
+        values.put("tele",telef);
+        values.put("morada",moradaf);
+        values.put("idade",idadef);
+        values.put("genero",generof);
         values.put("viajar",viajarf);
         values.put("asma",asmaf);
         values.put("sintomas",sintomaf);
@@ -55,12 +55,12 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         if (cursor.moveToFirst()) {
             do {
                 Data note = new Data();
-                note.setId(cursor.getInt(cursor.getColumnIndex("Id")));
-                note.setNome(cursor.getString(cursor.getColumnIndex("Nome")));
-                note.setTele(cursor.getString(cursor.getColumnIndex("Tele")));
-                note.setMorada(cursor.getString(cursor.getColumnIndex("Morada")));
-                note.setIdade(cursor.getString(cursor.getColumnIndex("Idade")));
-                note.setGenero(cursor.getString(cursor.getColumnIndex("Genero")));
+                note.setId(cursor.getInt(cursor.getColumnIndex("id")));
+                note.setNome(cursor.getString(cursor.getColumnIndex("nome")));
+                note.setTele(cursor.getString(cursor.getColumnIndex("tele")));
+                note.setMorada(cursor.getString(cursor.getColumnIndex("morada")));
+                note.setIdade(cursor.getString(cursor.getColumnIndex("idade")));
+                note.setGenero(cursor.getString(cursor.getColumnIndex("genero")));
                 note.setViajar(cursor.getString(cursor.getColumnIndex("viajar")));
                 note.setAsma(cursor.getString(cursor.getColumnIndex("asma")));
                 note.setSintomas(cursor.getString(cursor.getColumnIndex("sintomas")));
@@ -77,11 +77,11 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
-        values.put("Nome", note.getNome());
-        values.put("Genero", note.getGenero());
-        values.put("Tele", note.getTele());
-        values.put("Idade", note.getIdade());
-        values.put("Morada", note.getMorada());
+        values.put("nome", note.getNome());
+        values.put("genero", note.getGenero());
+        values.put("tele", note.getTele());
+        values.put("idade", note.getIdade());
+        values.put("morada", note.getMorada());
         values.put("viajar", note.getViajar());
         values.put("asma",note.getAsma());
         values.put("sintomas",note.getSintomas());

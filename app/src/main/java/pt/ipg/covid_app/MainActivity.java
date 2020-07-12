@@ -13,7 +13,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Intent fim = getIntent();
     }
     public void button_iniciar (View view){
         Intent iniciar = new Intent(getApplicationContext(), pagina_nome.class);
@@ -22,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void button_sair (View view){
-        Intent base_dados = new Intent(getApplicationContext(),RecyclerView.class);
+        Intent base_dados = new Intent(this, RecyclerView.class);;
         startActivity(base_dados);
     }
 }

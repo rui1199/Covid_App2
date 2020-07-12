@@ -26,6 +26,7 @@ public class pagina_resultados extends AppCompatActivity {
         moradaf = findViewById(R.id.textViewmorada);
         generof = findViewById(R.id.textViewgenero);
         viajarf = findViewById(R.id.textViewviajar);
+        asmaf= findViewById(R.id.textViewasma);
         sintomaf = findViewById(R.id.textViewsintomas);
         resultadof = findViewById(R.id.textViewresultado);
 
@@ -62,16 +63,18 @@ public class pagina_resultados extends AppCompatActivity {
 
         TextView resultado =findViewById(R.id.textViewresultado);
 
-        if(Idade1.length() < 65){
+        String age =textViewidadee.getText().toString();
+        double agee = Double.parseDouble(age);
+        if(Double.compare(0,agee) < 65){
             resultado.setText("COVID");
         }else{
             resultado.setText("n");
         }
     }
 
-    public void Terminar(View view){
+    public void button_terminar(View view){
 
-        Intent inicio = new Intent(getApplicationContext(), MainActivity.class);
+        Intent inicio = new Intent(this, MainActivity.class);
 
         startActivity(inicio);
 

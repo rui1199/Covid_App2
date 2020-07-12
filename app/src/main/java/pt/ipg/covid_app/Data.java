@@ -20,17 +20,17 @@ public class Data {
     //criar tabela
 
     public static final String CREATE_TABLE=
-            "CREATE TABLE " + "Questionario" + "("+
-                    "Id" + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                    "Nome" + " TexT, " +
-                    "Tele" + " TexT, " +
-                    "Morada" + " TexT, " +
-                    "Idade" + " TexT, " +
-                    "Genero" + " TexT, " +
+            "CREATE TABLE " + "Questionario" + "(" +
+                    "id" + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                    "nome" + " TexT, " +
+                    "tele" + " TexT, " +
+                    "morada" + " TexT, " +
+                    "idade" + " TexT, " +
+                    "genero" + " TexT, " +
                     "viajar" + " TexT, " +
                     "asma" + " TexT, " +
                     "sintomas" + " TexT, " +
-                    "resultado" + " TexT, " +  ")";
+                    "resultado" + " TexT " + ")";
 
     public Data(int id,String nome, String tele, String morada, String idade, String genero, String viajar, String asma, String sintomas, String resultado) {
 
