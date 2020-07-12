@@ -4,15 +4,30 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class pagina_resultados extends AppCompatActivity {
 
+    TextView nomef, generof, moradaf, telef, idadef, viajarf, asmaf, sintomaf, resultadof;
+    DataBaseHelper db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pagina_resultados);
+
+        //base dados
+        db=new DataBaseHelper(this);
+        //id
+        nomef = findViewById(R.id.textViewnome);
+        telef = findViewById(R.id.textViewtele);
+        idadef = findViewById(R.id.textViewidade);
+        moradaf = findViewById(R.id.textViewmorada);
+        generof = findViewById(R.id.textViewgenero);
+        viajarf = findViewById(R.id.textViewviajar);
+        sintomaf = findViewById(R.id.textViewsintomas);
+        resultadof = findViewById(R.id.textViewresultado);
 
         Intent terminar1 = getIntent();
 
@@ -52,5 +67,20 @@ public class pagina_resultados extends AppCompatActivity {
         }else{
             resultado.setText("n");
         }
+    }
+
+    public void terminar(View view){
+        String saveNome=nomef.getText().toString();
+        String savetele=telef.getText().toString();
+        String savemorada=moradaf.getText().toString();
+        String saveidade=idadef.getText().toString();
+        String savegenero=generof.getText().toString();
+        String saveasma=asmaf.getText().toString();
+        String saveviajar=viajarf.getText().toString();
+        String savesintoma=sintomaf.getText().toString();
+        String saveresultado=resultadof.getText().toString();
+
+        db.insertData(saveNome,savetele,savemorada,saveidade,savegenero,saveviajar,saveasma,savesintoma,saveresultado);
+
     }
 }

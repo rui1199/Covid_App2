@@ -17,10 +17,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Resultado final"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id=""/>
+
+        <TextView
+            android:id="@+id/nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 </LinearLayout>
 
     <LinearLayout
@@ -30,10 +31,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Resultado final"/>
+
         <TextView
+            android:id="@+id/tele"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id=""/>
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
     <LinearLayout
@@ -43,10 +45,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Resultado final"/>
+
         <TextView
+            android:id="@+id/morada"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id=""/>
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
     <LinearLayout
@@ -56,10 +59,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Resultado final"/>
+
         <TextView
+            android:id="@+id/idade"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id=""/>
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
     <LinearLayout
@@ -69,10 +73,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Resultado final"/>
+
         <TextView
+            android:id="@+id/genero"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id=""/>
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
     <LinearLayout
@@ -82,10 +87,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Resultado final"/>
+
         <TextView
+            android:id="@+id/viajar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id=""/>
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
     <LinearLayout
@@ -95,10 +101,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Resultado final"/>
+
         <TextView
+            android:id="@+id/asma"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id=""/>
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
     <LinearLayout
@@ -108,10 +115,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Resultado final"/>
+
         <TextView
+            android:id="@+id/sintoma"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id=""/>
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
     <LinearLayout
@@ -121,10 +129,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Resultado final"/>
+
         <TextView
+            android:id="@+id/terminar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id=""/>
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
 </LinearLayout>
