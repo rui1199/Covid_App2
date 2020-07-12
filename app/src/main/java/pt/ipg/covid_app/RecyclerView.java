@@ -13,7 +13,7 @@ public class RecyclerView extends AppCompatActivity {
     private List<Data> notesList = new ArrayList<>();
     private androidx.recyclerview.widget.RecyclerView recyclerView;
     DataBaseHelper db;
-    NotesAdapter mAdapter;
+    public static NotesAdapter mAdapter1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,10 +28,10 @@ public class RecyclerView extends AppCompatActivity {
         //then pass to recyclerview.
 
         notesList.addAll(db.getAllDataFromDb());
-        mAdapter = new NotesAdapter(this, notesList);
+        mAdapter1 = new NotesAdapter(this, notesList);
         androidx.recyclerview.widget.RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(mAdapter);
+        recyclerView.setAdapter(mAdapter1);
     }
 }

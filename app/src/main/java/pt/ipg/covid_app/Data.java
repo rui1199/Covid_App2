@@ -2,6 +2,7 @@ package pt.ipg.covid_app;
 
 public class Data {
 
+    int id;
     String nome;
     String tele;
     String morada;
@@ -20,6 +21,7 @@ public class Data {
 
     public static final String CREATE_TABLE=
             "CREATE TABLE " + "Questionario" + "("+
+                    "Id" + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                     "Nome" + " TexT, " +
                     "Tele" + " TexT, " +
                     "Morada" + " TexT, " +
@@ -30,8 +32,9 @@ public class Data {
                     "sintomas" + " TexT, " +
                     "resultado" + " TexT, " +  ")";
 
-    public Data(String nome, String tele, String morada, String idade, String genero, String viajar, String asma, String sintomas, String resultado) {
+    public Data(int id,String nome, String tele, String morada, String idade, String genero, String viajar, String asma, String sintomas, String resultado) {
 
+        this.id = id;
         this.nome = nome;
         this.tele = tele;
         this.morada = morada;
@@ -43,6 +46,13 @@ public class Data {
         this.resultado = resultado;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getNome() {
         return nome;

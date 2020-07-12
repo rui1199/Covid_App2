@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void button_sair (View view){
-
+        Intent base_dados = new Intent(getApplicationContext(),RecyclerView.class);
+        startActivity(base_dados);
     }
 }

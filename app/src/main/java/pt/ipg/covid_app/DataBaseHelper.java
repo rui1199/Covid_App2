@@ -55,6 +55,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         if (cursor.moveToFirst()) {
             do {
                 Data note = new Data();
+                note.setId(cursor.getInt(cursor.getColumnIndex("Id")));
                 note.setNome(cursor.getString(cursor.getColumnIndex("Nome")));
                 note.setTele(cursor.getString(cursor.getColumnIndex("Tele")));
                 note.setMorada(cursor.getString(cursor.getColumnIndex("Morada")));
@@ -69,5 +70,31 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         }
         db.close();
         return notes;
+    }
+
+    //edita dados
+    public int updateNote(Data note) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put("Nome", note.getNome());
+        values.put("Genero", note.getGenero());
+        values.put("Tele", note.getTele());
+        values.put("Idade", note.getIdade());
+        values.put("Morada", note.getMorada());
+        values.put("viajar", note.getViajar());
+        values.put("asma",note.getAsma());
+        values.put("sintomas",note.getSintomas());
+        values.put("resultado",note.getResultado());
+
+        return db.update("Questionario", values, "Id" + " = ?",
+                new String[]{String.valueOf(note.getId())});
+    }
+
+    public void deleteNote(Data note) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete("Questionario", "Id" + " = ?",
+                new String[]{String.valueOf(note.getId())});
+        db.close();
     }
 }

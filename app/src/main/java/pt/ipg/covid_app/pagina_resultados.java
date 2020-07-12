@@ -69,7 +69,12 @@ public class pagina_resultados extends AppCompatActivity {
         }
     }
 
-    public void terminar(View view){
+    public void Terminar(View view){
+
+        Intent inicio = new Intent(getApplicationContext(), MainActivity.class);
+
+        startActivity(inicio);
+
         String saveNome=nomef.getText().toString();
         String savetele=telef.getText().toString();
         String savemorada=moradaf.getText().toString();
