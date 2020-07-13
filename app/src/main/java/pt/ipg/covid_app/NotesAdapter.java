@@ -135,7 +135,7 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.MyViewHolder
         final EditText inputNoteViajar = view.findViewById(R.id.viajouUpdate);
         final EditText inputNoteAsma = view.findViewById(R.id.asmaUpdate);
         final EditText inputNoteSintomas = view.findViewById(R.id.SintomasUpdate);
-
+        final EditText inputNoteResultado = view.findViewById(R.id.resultadoUpdate);
 
         alertDialogBuilderUserInput
                 .setCancelable(false)
@@ -149,6 +149,7 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.MyViewHolder
                                 inputNoteViajar.getText().toString(),
                                 inputNoteAsma.getText().toString(),
                                 inputNoteSintomas.getText().toString(),
+                                inputNoteResultado.getText().toString(),
                                 position);
 
                     }
@@ -163,7 +164,7 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.MyViewHolder
         final AlertDialog alertDialog = alertDialogBuilderUserInput.create();
         alertDialog.show();
     }
-    private void updateNote(String noteNome, String noteGenero, String noteTele, String noteidade, String noteMorada, String noteViajar, String noteasma, String noteSintoma, int position) {
+    private void updateNote(String noteNome, String noteGenero, String noteTele, String noteidade, String noteMorada, String noteViajar, String noteasma, String noteSintoma, String noteresultado, int position) {
         Data n = notesList.get(position);
         // updating note text
         n.setNome(noteNome);
@@ -174,6 +175,7 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.MyViewHolder
         n.setSintomas(noteSintoma);
         n.setViajar(noteViajar);
         n.setAsma(noteasma);
+        n.setResultado(noteresultado);
         db = new DataBaseHelper(context);
         // updating note in db
         db.updateNote(n);

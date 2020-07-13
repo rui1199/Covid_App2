@@ -5,12 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 public class pagina_resultados extends AppCompatActivity {
 
     TextView nomef, generof, moradaf, telef, idadef, viajarf, asmaf, sintomaf, resultadof;
     DataBaseHelper db;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,15 +65,10 @@ public class pagina_resultados extends AppCompatActivity {
         TextView sintomas = findViewById(R.id.textViewsintomas);
         sintomas.setText(sintomas1);
 
+        String selectedRadioValue2 = terminar1.getStringExtra("rggg");
         TextView resultado =findViewById(R.id.textViewresultado);
+        resultado.setText(selectedRadioValue2);
 
-        String age =textViewidadee.getText().toString();
-        double agee = Double.parseDouble(age);
-        if(Double.compare(0,agee) < 65){
-            resultado.setText("COVID");
-        }else{
-            resultado.setText("n");
-        }
     }
 
     public void button_terminar(View view){
@@ -87,6 +86,7 @@ public class pagina_resultados extends AppCompatActivity {
         String saveviajar=viajarf.getText().toString();
         String savesintoma=sintomaf.getText().toString();
         String saveresultado=resultadof.getText().toString();
+
 
         db.insertData(saveNome,savetele,savemorada,saveidade,savegenero,saveviajar,saveasma,savesintoma,saveresultado);
 

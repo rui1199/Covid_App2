@@ -23,6 +23,8 @@ public class pagina_sintomas extends AppCompatActivity {
     RadioButton Rnao;
     RadioButton Rsim1;
     RadioButton Rnao1;
+    RadioButton Rsim4;
+    RadioButton Rnao3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,6 +83,10 @@ public class pagina_sintomas extends AppCompatActivity {
         RadioGroup rgg = (RadioGroup) findViewById(R.id.grupo2);
         String selectedRadioValue1 = ((RadioButton) findViewById(rgg.getCheckedRadioButtonId())).getText().toString();
         terminar1.putExtra("rgg", selectedRadioValue1);
+
+        RadioGroup rggg = (RadioGroup) findViewById(R.id.grupo3);
+        String selectedRadioValue2 = ((RadioButton) findViewById(rggg.getCheckedRadioButtonId())).getText().toString();
+        terminar1.putExtra("rggg", selectedRadioValue2);
 
         EditText sintomas = (EditText) findViewById(R.id.sintomas);
         String sintomas1 = sintomas.getText().toString();

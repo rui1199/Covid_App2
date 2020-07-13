@@ -12,8 +12,11 @@
     <string name="edit_address">Address</string>
     <string name="edit_gender">Gender</string>
     <string name="button_continue">Continue</string>
-    <string name="button_continue2">Continue</string>
+    <string name="button_continue2">Conclude</string>
     <string name="edit_viajar">Recently Traveled</string>
-    <string name="button_travel">Yes</string>
-    <string name="button_didnt_travel">No</string>
+    <string name="edit_asma">Has breathing problems</string>
+    <string name="edit_sintomas">There have been some symptoms</string>
+    <string name="edit_teste">Do you think it\'s important to take the test?</string>
+    <string name="edt_sint">Ex: Cough, Fever .... or No</string>
+    <string name="button_submit">To submit</string>
 </resources>

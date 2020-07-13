@@ -13,8 +13,11 @@
     <string name="edit_address">Morada</string>
     <string name="edit_gender">Género</string>
     <string name="button_continue">Continuar</string>
-    <string name="button_continue2">Continuar</string>
+    <string name="button_continue2">Concluir</string>
     <string name="edit_viajar">Viajou Recentemente</string>
-    <string name="button_travel">Sim</string>
-    <string name="button_didnt_travel">Não</string>
+    <string name="edit_asma">Tem Problemas Respiratórios</string>
+    <string name="edit_sintomas">Tem tido alguns sintomas</string>
+    <string name="edit_teste">Acha importante fazer o Teste?</string>
+    <string name="edt_sint">Ex: Tosse, Febre.... ou Não tem</string>
+    <string name="button_submit">Submeter</string>
 </resources>
