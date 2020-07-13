@@ -43,6 +43,11 @@ public class pagina_nome extends AppCompatActivity {
             textinputtele.requestFocus();
             return;
         }
+        if(tele.length()>=10){
+            textinputtele.setError("numero de telemovel inválido");
+            textinputtele.requestFocus();
+            return;
+        }
         String idade = textinputidade.getText().toString();
         int idadee;
         try {

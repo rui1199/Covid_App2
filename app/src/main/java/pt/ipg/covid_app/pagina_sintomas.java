@@ -41,7 +41,7 @@ public class pagina_sintomas extends AppCompatActivity {
 
         TextView textViewnome = findViewById(R.id.textViewnome);
         textViewnome.setText(nome);
-        TextView textViewtele = findViewById(R.id.textViewphone);
+        TextView textViewtele = findViewById(R.id.textViewtitulo);
         textViewtele.setText(tele);
         TextView textViewidade = findViewById(R.id.textViewage);
         textViewidade.setText(idade);
@@ -59,7 +59,7 @@ public class pagina_sintomas extends AppCompatActivity {
         String Nome1 = nome1.getText().toString();
         terminar1.putExtra(EXTRA_NOME1, Nome1);
 
-        TextView tele1 = findViewById(R.id.textViewphone);
+        TextView tele1 = findViewById(R.id.textViewtitulo);
         String Tele1 = tele1.getText().toString();
         terminar1.putExtra(EXTRA_TELE1, Tele1);
 

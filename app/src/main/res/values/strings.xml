@@ -19,4 +19,5 @@
     <string name="edit_teste">Do you think it\'s important to take the test?</string>
     <string name="edt_sint">Ex: Cough, Fever .... or No</string>
     <string name="button_submit">To submit</string>
+    <string name="button_quest">Other Questionnaires</string>
 </resources>

@@ -20,4 +20,5 @@
     <string name="edit_teste">Acha importante fazer o Teste?</string>
     <string name="edt_sint">Ex: Tosse, Febre.... ou Não tem</string>
     <string name="button_submit">Submeter</string>
+    <string name="button_quest">Outros Questionários</string>
 </resources>
